@@ -1,0 +1,20 @@
+body {
+    background: green;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+}
+
+.images-container > img {
+    width: 300px;
+    height: 300px;
+}
+
+.para-content {
+    font-size: 36px;
+    font-weight: 700;
+}

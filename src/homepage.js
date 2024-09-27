@@ -3,24 +3,23 @@ import BreakfastImage from './assets/img/pexels1.jpg';
 import LunchImage from './assets/img/pexels2.jpg';
 import DinnerImage from './assets/img/pexels3.jpg';
 
+const div = document.createElement('div');
+div.classList.add('images-container');
 
 export function title() {
     const x = document.createElement('h1');
-    x.innerHTML = 'Name of the restaurant';
+    x.innerHTML = 'La sazon de Cagua';
     document.getElementById('content').appendChild(x);
     return x;
 }
 
 export function images() {
-    // Add the image to our existing div.
     const breakfast = new Image();
     const lunch = new Image();
     const dinner = new Image();
 
-    const div = document.createElement('div');
     // document.getElementById('content').append(div);
     content.append(div);
-    div.classList.add('images-container');
 
     breakfast.src = BreakfastImage;
     lunch.src = LunchImage;
